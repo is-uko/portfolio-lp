@@ -19,11 +19,14 @@ const config: Config = {
         "0%": {
           "opacity": "0",
         },
-        "10%": {
+        "20%": {
           "opacity": "1",
         },
-        "90%": {
+        "33%": {
           "opacity": "1",
+        },
+        "63%": {
+          "opacity": "0",
         },
         "100%": {
           "opacity": "0",

@@ -54,7 +54,7 @@ export default function Home() {
         <div className="relative -z-10 w-4/5 h-[60em] ml-auto">
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:0s]"
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite] [animation-delay:0s]"
               src="/img/mainvisual1.jpg"
               alt=""
               width={500}
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:5s]"
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite] [animation-delay:5s]"
               src="/img/mainvisual2.jpg"
               alt=""
               width={500}
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:10s]"
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite] [animation-delay:10s]"
               src="/img/mainvisual3.jpg"
               alt=""
               width={500}
