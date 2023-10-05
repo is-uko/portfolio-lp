@@ -8,22 +8,8 @@ import { Student1 } from "./student1";
 import { Student2 } from "./student2";
 import { Student3 } from "./student3";
 import { Footer } from "./footer";
-import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [count, setCount] = useState<number>(-1);
-  const handleCount = () => {
-    setCount(count + 1);
-  };
-
-  useEffect(() => {
-    const timerId = setInterval(() => {
-      handleCount();
-    }, 5000);
-
-    return () => handleCount();
-  }, [count]);
-
   const OVERVIEWS = [
     {
       title: "レッスン内容",
@@ -61,16 +47,14 @@ export default function Home() {
             <br />
             BBB英会話スクール
           </h1>
-          <button className="relative bg-red-600 text-white text-xl px-40 py-5 rounded-lg -translate-x-2 duration-500 hover:scale-110 after:absolute after:top-6 after:right-5 after:w-4 after:h-4 after:border-b-2 after:border-r-2 after:border-gray-600 after:-rotate-45">無料体験はこちら</button>
+          <button className="relative bg-red-600 text-white text-xl px-40 py-5 rounded-lg -translate-x-2 duration-500 hover:scale-110 after:absolute after:top-6 after:right-5 after:w-4 after:h-4 after:border-b-2 after:border-r-2 after:border-gray-600 after:-rotate-45">
+            無料体験はこちら
+          </button>
         </div>
         <div className="relative -z-10 w-4/5 h-[60em] ml-auto">
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className={
-                count % 3 === 0
-                  ? "w-full opacity-1 duration-[2000ms]"
-                  : "w-full opacity-0 duration-[2000ms]"
-              }
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:0s]"
               src="/img/mainvisual1.jpg"
               alt=""
               width={500}
@@ -79,11 +63,7 @@ export default function Home() {
           </div>
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className={
-                count % 3 === 1
-                  ? "w-full opacity-1 duration-[2000ms]"
-                  : "w-full opacity-0 duration-[2000ms]"
-              }
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:5s]"
               src="/img/mainvisual2.jpg"
               alt=""
               width={500}
@@ -92,11 +72,7 @@ export default function Home() {
           </div>
           <div className="absolute w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:shadow-[inset_0_0_10px_15px_#FFF]">
             <Image
-              className={
-                count % 3 === 2
-                  ? "w-full opacity-1 duration-[2000ms]"
-                  : "w-full opacity-0 duration-[2000ms]"
-              }
+              className="w-full opacity-0 animate-[mainvisual_15s_infinite_linear] [animation-delay:10s]"
               src="/img/mainvisual3.jpg"
               alt=""
               width={500}
@@ -142,13 +118,19 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center pt-32">
-          <h2 className="text-3xl font-bold pb-2">まずは無料で、BBBの英会話を試してみませんか？</h2>
-          <p className="text-lg pb-12">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
-          <button className="bg-red-600 text-white text-2xl font-bold px-72 py-5 rounded-full mb-28 border-4 border-red-600 duration-500 hover:bg-black hover:text-red-600">無料体験に申し込む</button>
+          <h2 className="text-3xl font-bold pb-2">
+            まずは無料で、BBBの英会話を試してみませんか？
+          </h2>
+          <p className="text-lg pb-12">
+            今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！
+          </p>
+          <button className="bg-red-600 text-white text-2xl font-bold px-72 py-5 rounded-full mb-28 border-4 border-red-600 duration-500 hover:bg-black hover:text-red-600">
+            無料体験に申し込む
+          </button>
         </div>
       </main>
       <footer className="bg-gray-200">
-      <Footer></Footer>
+        <Footer></Footer>
       </footer>
     </>
   );

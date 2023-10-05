@@ -15,6 +15,20 @@ const config: Config = {
       },
     },
     keyframes: {
+      mainvisual: {
+        "0%": {
+          "opacity": "0",
+        },
+        "10%": {
+          "opacity": "1",
+        },
+        "90%": {
+          "opacity": "1",
+        },
+        "100%": {
+          "opacity": "0",
+        }
+      },
       bg: {
         "0%": {
           "background-position": "0 0",
