@@ -12,8 +12,8 @@ export function Header() {
       <div
         className={
           isOpen
-            ? "fixed w-screen h-screen bg-red-600 duration-500 z-20"
-            : "fixed w-screen h-screen bg-red-600 bg-opacity-0 pointer-events-none duration-500 z-20"
+            ? "fixed w-screen h-screen bg-red-600 duration-500"
+            : "fixed w-screen h-screen bg-red-600 bg-opacity-0 pointer-events-none duration-500"
         }
       >
         <nav
@@ -33,7 +33,7 @@ export function Header() {
       </div>
       <div className="flex justify-between">
         <Image
-          className="h-14 mt-5 mb-5 z-30"
+          className="h-14 mt-5 mb-5 z-10"
           src={isOpen ? "img/logo-w.svg" : "img/logo-r.svg"}
           alt=""
           width={150}
@@ -42,30 +42,30 @@ export function Header() {
         <button
           className={
             isOpen
-              ? "relative h-24 w-24 bg-red-600 z-30 duration-500"
-              : "relative h-24 w-24 bg-red-600 hover:bg-red-800 z-30 duration-500"
+              ? "relative h-24 w-24 bg-red-600 duration-500"
+              : "relative h-24 w-24 bg-red-600 hover:bg-red-800 duration-500"
           }
           onClick={handleClick}
         >
           <span
             className={
               isOpen
-                ? "absolute top-8 left-6 h-[2px] w-12 bg-black translate-y-3.5 rotate-45 z-30 duration-500"
-                : "absolute top-8 left-6 h-[2px] w-12 bg-black z-30 duration-500"
+                ? "absolute top-8 left-6 h-[2px] w-12 bg-black translate-y-3.5 rotate-45 duration-500"
+                : "absolute top-8 left-6 h-[2px] w-12 bg-black z-10 duration-500"
             }
           ></span>
           <span
             className={
               isOpen
-                ? "top-8 left-6 h-[2px] w-12 bg-red-600 translate-y-3.5 rotate-45 z-30 duration-500"
-                : "absolute top-12 left-6 h-[2px] w-12 bg-black z-30 duration-500"
+                ? "top-8 left-6 h-[2px] w-12 bg-red-600 translate-y-3.5 rotate-45 duration-500"
+                : "absolute top-12 left-6 h-[2px] w-12 bg-black z-10 duration-500"
             }
           ></span>
           <span
             className={
               isOpen
-                ? "absolute top-8 left-6 h-[2px] w-12 bg-black translate-y-3.5 -rotate-45 z-30 duration-500"
-                : "absolute top-16 left-6 h-[2px] w-12 bg-black z-30 duration-500"
+                ? "absolute top-8 left-6 h-[2px] w-12 bg-black translate-y-3.5 -rotate-45 duration-500"
+                : "absolute top-16 left-6 h-[2px] w-12 bg-black z-10 duration-500"
             }
           ></span>
         </button>
