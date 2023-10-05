@@ -12,7 +12,7 @@ export function Header() {
       <div
         className={
           isOpen
-            ? "fixed w-screen h-screen bg-red-600 duration-500 z-20 dark:bg-opacity-0"
+            ? "fixed w-screen h-screen bg-red-600 duration-500 z-20"
             : "fixed w-screen h-screen bg-red-600 bg-opacity-0 pointer-events-none duration-500 z-20"
         }
       >
