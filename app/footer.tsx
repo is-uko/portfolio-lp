@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <div className="max-w-[860px] mx-auto pt-10 pb-5">
+    <div className="w-11/12 lg:max-w-[860px] mx-auto pt-10 pb-5">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 pb-10">
         <div>
           <h2 className="font-bold pb-2">コース一覧</h2>

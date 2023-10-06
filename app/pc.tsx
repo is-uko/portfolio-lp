@@ -11,8 +11,8 @@ export function PC() {
       ref={ref}
       className={
         inView
-          ? "w-[calc(50%+2rem)] -ml-8 h-44 mb-10 flex bg-slate-800 rounded-3xl opacity-1 duration-500"
-          : "w-[calc(50%+2rem)] -ml-[calc(50%+2rem)] h-44 mb-10 flex bg-slate-800 rounded-3xl opacity-0 uration-500"
+          ? "w-[98vw] lg:w-[calc(50vw+2rem)] -ml-8 h-30 lg:h-44 mb-10 flex bg-white rounded-3xl opacity-1 duration-500"
+          : "lg:w-[calc(50vw+2rem)] -ml-[calc(50vw+2rem)] h-30 lg:h-44 mb-10 flex bg-white rounded-3xl opacity-0 uration-500"
       }
     >
       <div className="flex mx-auto">
@@ -23,9 +23,9 @@ export function PC() {
           width={174}
           height={120}
         ></Image>
-        <div className="pt-14">
+        <div className="py-10 lg:pt-14">
           <h3 className="text-red-600 text-2xl font-bold">オンライン対応</h3>
-          <p className="text-white">24時間いつでも受講できる！</p>
+          <p >24時間いつでも受講できる！</p>
         </div>
       </div>
     </div>

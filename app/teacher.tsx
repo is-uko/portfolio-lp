@@ -11,8 +11,8 @@ export function Teacher() {
       ref={ref}
       className={
         inView
-          ? "w-[calc(50%+2rem)] -mr-8 h-44 ml-auto flex bg-slate-800 rounded-3xl opacity-1 duration-500"
-          : "w-[calc(50%+2rem)] -mr-[calc(50%+2rem)] h-44 ml-auto flex bg-slate-800 rounded-3xl opacity-0 duration-500"
+          ? "w-[98vw] lg:w-[calc(50vw+2rem)] -mr-8 h-30 lg:h-44 ml-auto flex bg-white rounded-3xl opacity-1 duration-500"
+          : "lg:w-[calc(50vw+2rem)] -mr-[calc(50vw+2rem)] h-30 lg:h-44 ml-auto flex bg-white rounded-3xl opacity-0 duration-500"
       }
     >
       <div className="flex mx-auto">
@@ -23,9 +23,9 @@ export function Teacher() {
           width={101}
           height={120}
         ></Image>
-        <div className="pt-14">
+        <div className="py-10 lg:pt-14">
           <h3 className="text-red-600 text-2xl font-bold">講師はネイティブ</h3>
-          <p className="text-white">お気に入りの講師が自由に選べる！</p>
+          <p>お気に入りの講師が自由に選べる！</p>
         </div>
       </div>
     </div>
